@@ -1,0 +1,114 @@
+@use 'variables' as *;
+
+.hero {
+  position: relative;
+
+  width: 100%;
+  height: 711px;
+
+  background-image: url('../images/bikes/bike/bike-black.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  overflow: hidden;
+
+  &__content {
+    position: relative;
+
+    max-width: $container-width;
+    height: 100%;
+
+    margin: 0 auto;
+  }
+
+  &__logo {
+    position: absolute;
+
+    top: 36px;
+    left: 120px;
+
+    display: block;
+
+    width: 187px;
+    height: 56px;
+
+    img {
+      display: block;
+
+      width: 187px;
+      height: 56px;
+    }
+  }
+
+  &__buttons {
+    position: absolute;
+
+    top: 48px;
+    right: 120px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 32px;
+  }
+
+  &__phone,
+  &__menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+  }
+
+  &__phone img {
+    display: block;
+
+    width: 24px;
+    height: 24px;
+  }
+
+  &__menu-button {
+    padding: 0;
+
+    border: 0;
+    background: transparent;
+
+    cursor: pointer;
+
+    img {
+      display: block;
+
+      width: 24px;
+      height: 16px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+
+    top: 428px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 672px;
+    height: 80px;
+
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $color-white;
+
+    font-family: $font-primary;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    text-align: center;
+  }
+}
